@@ -86,7 +86,9 @@ function createRock(x) {
      * we should call endGame()
      */
 
- checkCollision();
+ if (checkCollision(rock) === true) {
+   endgame();
+ }
 
     /**
      * Otherwise, if the rock hasn't reached the bottom of
