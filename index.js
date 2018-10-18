@@ -75,8 +75,11 @@ function createRock(x) {
    * seems like a good pace.)
    */
   function moveRock() {
+    function drop() {
+      top = `${top += 2}px`
+    }
     if (top < 200) {
-    top = `${top += 2}px`
+      window.requestAnimationFrame(drop)
     }
     // implement me!
     // (use the comments below to guide you!)
