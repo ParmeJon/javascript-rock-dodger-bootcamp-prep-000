@@ -77,6 +77,7 @@ function createRock(x) {
   function moveRock() {
     if (top < 200) {
     top = `${top += 2}px`
+    }
     // implement me!
     // (use the comments below to guide you!)
     /**
