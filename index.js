@@ -119,7 +119,12 @@ function moveDodger(e) {
    * we've declared for you above.)
    * And be sure to use the functions declared below!
    */
-   document.addEventListener ('keydown', )
+   if (e.which === 37) {
+     moveDodgerLeft();
+   }
+   if (e.which === 39) {
+     moveDodgerRight();
+   }
 }
 
 function moveDodgerLeft() {
