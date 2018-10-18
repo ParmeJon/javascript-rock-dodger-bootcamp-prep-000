@@ -79,17 +79,14 @@ function createRock(x) {
       rock.style.top = `${top += 2}px`
     
     
-    if (top < 400) {
-      window.requestAnimationFrame(drop)
-    }
-    
-    window.requestAnimationFrame(drop)
     // implement me!
     // (use the comments below to guide you!)
     /**
      * If a rock collides with the DODGER,
      * we should call endGame()
      */
+
+ checkCollision();
 
     /**
      * Otherwise, if the rock hasn't reached the bottom of
