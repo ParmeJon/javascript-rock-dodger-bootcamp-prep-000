@@ -77,7 +77,7 @@ function createRock(x) {
    */
   function moveRock() {
     function drop() {
-      top = `${top += 2}px`
+      rock.style.top = `${top += 2}px`
     }
     
     if (top < 400) {
