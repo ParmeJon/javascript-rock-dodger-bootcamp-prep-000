@@ -162,9 +162,11 @@ function moveDodgerLeft() {
    */
   var leftNumbers = dodger.style.left.replace('px', '');
   var left = parseInt(leftNumbers, 10);
+  window.requestAnimationFrame(function() {
     if (left > 0) {
-          window.requestAnimationFrame(dodger.style.left = `${left - 4}px`);
+        dodger.style.left = `${left - 4}px`;
     }
+  });
 }
 
 function moveDodgerRight() {
