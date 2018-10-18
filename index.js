@@ -79,7 +79,7 @@ function createRock(x) {
     function drop() {
       top = `${top += 2}px`
     }
-    if (top < 200) {
+    if (top < 400) {
       window.requestAnimationFrame(drop)
     }
     // implement me!
