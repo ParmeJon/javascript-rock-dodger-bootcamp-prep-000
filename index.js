@@ -175,11 +175,11 @@ function moveDodgerRight() {
    */
   var leftNumbers = dodger.style.left.replace('px', '');
   var left = parseInt(leftNumbers, 10);
-     function() {
+  window.requestAnimationFrame(function() {
      if (left < 360) {
-          window.requestAnimationFrame(dodger.style.left = `${left + 4}px`);
+         dodger.style.left = `${left + 4}px`;
      }
-    }
+    });
 }
 
 /**
