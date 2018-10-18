@@ -16,6 +16,8 @@ var gameInterval = null
  * Be aware of what's above this line,
  * but all of your work should happen below.
  */
+ 
+DODGER.style.backgroundColor = '#FF69B4'
 
 function checkCollision(rock) {
   // implement me!
