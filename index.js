@@ -76,7 +76,6 @@ function createRock(x) {
    * seems like a good pace.)
    */
   function moveRock() {
-    function drop() {
       rock.style.top = `${top += 2}px`
     }
     
